@@ -12,19 +12,30 @@
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="30"/>
             <ColumnDefinition Width="auto"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="20"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
 
         <TextBlock Text="Hi Nirmal" Grid.Column="1" Grid.Row="1" FontSize="36" />
         <TextBlock Text="Second Line" Grid.Column="1" Grid.Row="2" FontSize="36" />
-        <TextBox x:Name="firstName" Grid.Column="2" Grid.Row ="20" Width="300"/>
-        <Button Grid.Column="3" Grid.Row ="20" Width="150" Content="Sumbit" FontSize="32"  Click="sumbitButton_Click"/>
+        <TextBox x:Name="firstName" Grid.Column="1" Grid.Row ="3" Width="300"/>
+        <ComboBox x:Name="mycomboBox" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding FullName}" />
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <Button Grid.Column="3" Grid.Row ="3" Grid.RowSpan="2" Width="150" Content="Sumbit" FontSize="32"  Click="sumbitButton_Click"/>
+        <Image Grid.Column="5" Grid.Row="1" Grid.RowSpan="6" Width="280"  Source="C:/Users/nirma/Downloads/UI_APP_Testing-master/UI_APP_Testing-master/UI_APP_Testing/Image Folder/Robotics.jpg" />
 
     </Grid>
 </Window>
