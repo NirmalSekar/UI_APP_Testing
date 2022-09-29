@@ -23,8 +23,8 @@
 
         <TextBlock Text="Hi Nirmal" Grid.Column="1" Grid.Row="1" FontSize="36" />
         <TextBlock Text="Second Line" Grid.Column="1" Grid.Row="2" FontSize="36" />
-        <TextBox x:Name="content" Grid.Column="2" Grid.Row ="20" Width="300"/>
-        <Button Grid.Column="3" Grid.Row ="20" Width="150" Content="Sumbit" FontSize="32"  Click="SumbitButton_Click"/>
+        <TextBox x:Name="firstName" Grid.Column="2" Grid.Row ="20" Width="300"/>
+        <Button Grid.Column="3" Grid.Row ="20" Width="150" Content="Sumbit" FontSize="32"  Click="sumbitButton_Click"/>
 
     </Grid>
 </Window>

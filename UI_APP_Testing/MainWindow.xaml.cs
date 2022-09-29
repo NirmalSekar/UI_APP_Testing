@@ -25,9 +25,9 @@ namespace UI_APP_Testing
             InitializeComponent();
         }
 
-        private void SumbitButton_Click(object sender, RoutedEventArgs e)
+        private void sumbitButton_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("My first presentation");
+            MessageBox.Show($"Hi {firstName.Text} My first presentation");
         }
     }
 }
