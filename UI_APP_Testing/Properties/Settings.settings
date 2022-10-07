@@ -1,7 +1,12 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="UI_APP_Testing.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="FirstName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">"Nirmal"</Value>
+    </Setting>
+    <Setting Name="LastName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">"Kumar"</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>

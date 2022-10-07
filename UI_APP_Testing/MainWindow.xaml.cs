@@ -46,6 +46,12 @@ namespace UI_APP_Testing
                 {
                     return $"{FirstName} {LastName}";
                 }
+
+                set
+                {
+                    Properties.Settings.Default.FirstName = value;
+                    Properties.Settings.Default.Save();
+                }
             } 
         }
     }
